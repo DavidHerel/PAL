@@ -1,0 +1,2 @@
+# PAL
+PAL -  Advanced algorithmization
