@@ -20,12 +20,15 @@ void print(std::unordered_set<std::string> const &s)
               std::ostream_iterator<std::string>(std::cout, " "));
 }
 
-std::string find_border_network(std::string &certificate, int ending_index, int hmin,int hmax){
+std::string find_border_network(std::string &certificate, int ending_index, int nmin, int nmax, int hmin,int hmax){
     int sum0 =0;
     int sum1 = 1;
     int i = ending_index-1;
     //std::cout << "find border network for certificate: " << certificate << "\n";
     while (true){
+        if (sum1+sum0>nmax*2){
+            return "ERROR";
+        }
         //printf("i: %d c: %c\n", i, certificate[i]);
         if (certificate[i] == '1'){
             sum1++;
@@ -36,6 +39,9 @@ std::string find_border_network(std::string &certificate, int ending_index, int 
             break;
         }
         i--;
+    }
+    if (nmin >sum0){
+        return "ERROR";
     }
 
     //printf("starting index: %d endind index: %d \n", i, ending_index);
@@ -85,7 +91,7 @@ void count_border_networks(int nmin, int nmax, int hmin, int hmax, std::string &
             stack.pop();
             if(!stack.empty()){
                 //printf("i: %d c: %c\n", i, certificate[i]);
-                std::string new_bn = find_border_network(certificate, i, hmin, hmax);
+                std::string new_bn = find_border_network(certificate, i, nmin, nmax, hmin, hmax);
                 if (new_bn.compare("ERROR") == 0){
                     continue;
                 }
@@ -118,7 +124,7 @@ int find_border_networks(int nmin, int nmax, int hmin, int hmax, std::string &ce
             stack.pop();
             if(!stack.empty()){
                 //printf("i: %d c: %c\n", i, certificate[i]);
-                std::string new_bn = find_border_network(certificate, i, hmin, hmax);
+                std::string new_bn = find_border_network(certificate, i, nmin, nmax, hmin, hmax);
                 if (new_bn.compare("ERROR") == 0){
                     continue;
                 }
