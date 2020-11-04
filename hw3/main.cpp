@@ -6,7 +6,8 @@
 #include <list>
 #include <algorithm>
 #include <iterator>
-
+#include <climits>
+#include <cstring>
 #include <iostream>
 #include <unordered_set>
 #include <algorithm>
@@ -19,7 +20,7 @@ void print(std::unordered_set<std::string> const &s)
               std::ostream_iterator<std::string>(std::cout, " "));
 }
 
-std::string find_border_network(std::string &certificate, int ending_index){
+std::string find_border_network(std::string &certificate, int ending_index, int hmin,int hmax){
     int sum0 =0;
     int sum1 = 1;
     int i = ending_index-1;
@@ -38,26 +39,44 @@ std::string find_border_network(std::string &certificate, int ending_index){
     }
 
     //printf("starting index: %d endind index: %d \n", i, ending_index);
-    return certificate.substr(i, ending_index-i+1);
+    std::string tree_certif_cut= certificate.substr(i, ending_index-i+1);
+
+    //lets build a FUCKING TREE
+    std::stack<int> stack;
+    int node = 0;
+    int sum_0 = 0;
+    int NODE = tree_certif_cut.size()/2;
+    int *dist = new int[NODE];
+    memset(dist, INT_MIN, sizeof(int)*NODE);
+    int sum_1 = 0;
+    for (int i = 0; i < tree_certif_cut.size(); i++){
+        if (tree_certif_cut[i] == '0'){
+            stack.push(node);
+            dist[node] = sum_0-sum_1;
+            node++;
+            sum_0++;
+        }else{
+            stack.pop();
+            sum_1++;
+        }
+    }
+    int max_el = *std::max_element(dist, dist+NODE);
+    //std::cout << "Max el: " << max_el << "\n";
+    if (hmin <= max_el && max_el <= hmax){
+        return tree_certif_cut;
+    }else{
+        return "ERROR";
+    }
 }
 
 void count_border_networks(int nmin, int nmax, int hmin, int hmax, std::string &certificate,
                            std::unordered_set<std::string> &border_networks){
     std::stack<int> stack;
-    std::vector<std::pair<int, int>> nodesWeightsList;
-    std::list<std::pair<int, int>> edgesList;
-    int center;
     int node = 0;
     int sum_0 = 0;
     int sum_1 = 0;
     for (int i = 0; i < certificate.size(); i++){
         if (certificate[i] == '0'){
-            nodesWeightsList.push_back(std::make_pair(node, sum_0-sum_1));
-            if(stack.empty()){
-                center = node;
-            } else{
-                edgesList.push_back(std::make_pair(stack.top(), node));
-            }
             stack.push(node);
             node++;
             sum_0++;
@@ -66,16 +85,14 @@ void count_border_networks(int nmin, int nmax, int hmin, int hmax, std::string &
             stack.pop();
             if(!stack.empty()){
                 //printf("i: %d c: %c\n", i, certificate[i]);
-                std::string new_bn = find_border_network(certificate, i);
+                std::string new_bn = find_border_network(certificate, i, hmin, hmax);
+                if (new_bn.compare("ERROR") == 0){
+                    continue;
+                }
                 int size = new_bn.size()/2;
                 int local_max = -1;
-                //projdi vsechny nodes vyssi nez curr_node a najdi v nich maximalni weight
-                for (int j = 0; j < nodesWeightsList.size(); j++){
-                    if (nodesWeightsList[j].first >= curr_node && local_max < nodesWeightsList[j].second){
-                        local_max = nodesWeightsList[j].second;
-                    }
-                }
-                if (nmin <= size && size <= nmax && hmin <= local_max-nodesWeightsList[curr_node].second && local_max-nodesWeightsList[curr_node].second<=hmax){
+
+                if (nmin <= size && size <= nmax){
                     //std::cout << "Size: " << size << " Weight: " << local_max -nodesWeightsList[curr_node].second << "\n";
                     //std::cout <<  "Inserted: "<<new_bn << "\n";
                     border_networks.insert(new_bn);
@@ -90,31 +107,21 @@ void count_border_networks(int nmin, int nmax, int hmin, int hmax, std::string &
 int find_border_networks(int nmin, int nmax, int hmin, int hmax, std::string &certificate,
                            std::unordered_set<std::string> &border_networks){
     std::stack<int> stack;
-    std::vector<std::pair<int, int>> nodesWeightsList;
-    std::list<std::pair<int, int>> edgesList;
-    int center;
-    //std::cout << certificate << "\n";
     int node = 0;
-    int sum_0 = 0;
-    int sum_1 = 0;
     int counter = 0;
     for (int i = 0; i < certificate.size(); i++){
         if (certificate[i] == '0'){
             //nodesWeightsList.push_back(std::make_pair(node, sum_0-sum_1));
-            if(stack.empty()){
-                center = node;
-            } else{
-                //edgesList.push_back(std::make_pair(stack.top(), node));
-            }
             stack.push(node);
             node++;
-            sum_0++;
         }else{
-            int curr_node = stack.top();
             stack.pop();
             if(!stack.empty()){
                 //printf("i: %d c: %c\n", i, certificate[i]);
-                std::string new_bn = find_border_network(certificate, i);
+                std::string new_bn = find_border_network(certificate, i, hmin, hmax);
+                if (new_bn.compare("ERROR") == 0){
+                    continue;
+                }
                 std::unordered_set<std::string>::const_iterator got = border_networks.find(new_bn);
 
                 if ( got != border_networks.end() ){
@@ -122,7 +129,6 @@ int find_border_networks(int nmin, int nmax, int hmin, int hmax, std::string &ce
                 }
 
             }
-            sum_1++;
         }
     }
     return counter;
@@ -156,6 +162,7 @@ int main() {
     std::string certificate_small_1;
     std::string certificate_small_2;
 
+    //TRIM
     int sum_0 = 0;
     int sum_1 = 0;
     int i = 0;
@@ -176,20 +183,6 @@ int main() {
         i++;
     }
 
-    //std::cout << "Trim certificates:\n";
-    //test_input_print(nmin, nmax, hmin, hmax, certificate_small_1, certificate_small_2);
-
-    //now we have 2 or 1 certificates for small tree with 1 center
-    //count borderNetworks - networks without center
-    //root of BN - je ten uzel v BN ktery ma nejmensi vzdalenost do centra cele site, root R, je rootem BN, B(R)
-    //size of BN - pocet uzlu v ni
-    //height of BN - maximalni vzdalenost rootu od jakehokoliv NODU v BN
-    //child of node x in BN - je node y, ktery je soused x, a ma o 1 vyssi vzdalenost od roota nez x
-    // equivalence of two border networks B1 and B1 s rootami R1 A R2
-    // je definovana rekurzivne
-    //
-
-    //std::cout << "Count border networks: \n";
     std::unordered_set<std::string> border_networks;
     count_border_networks(nmin, nmax, hmin, hmax, certificate_small_1, border_networks);
 
