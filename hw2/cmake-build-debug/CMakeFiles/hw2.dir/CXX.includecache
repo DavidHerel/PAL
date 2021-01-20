@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Skola/PAL/PAL/hw2/main.cpp
+iostream
+-
+vector
+-
+stack
+-
+stdio.h
+-
+list
+-
+time.h
+-
+cstring
+-
+climits
+-
+algorithm
+-
+

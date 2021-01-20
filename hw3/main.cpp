@@ -52,6 +52,7 @@ std::string find_border_network(std::string &certificate, int ending_index, int 
     int node = 0;
     int sum_0 = 0;
     int NODE = tree_certif_cut.size()/2;
+    //TODO - zrychlit - tu velikost
     int *dist = new int[NODE];
     memset(dist, INT_MIN, sizeof(int)*NODE);
     int sum_1 = 0;

@@ -1,0 +1,72 @@
+vertex: 0 discovery time: 0 low link: 0
+vertex: 1 discovery time: 1 low link: 1
+vertex: 2 discovery time: 2 low link: 2
+Changing vertex: 2 discovery time: 2 low link: 1
+Changing first visit vertex: 1 discovery time: 1 low link: 1
+Changing vertex: 1 discovery time: 1 low link: 1
+vertex: 6 discovery time: 3 low link: 3
+vertex: 7 discovery time: 4 low link: 4
+vertex: 8 discovery time: 5 low link: 5
+vertex: 16 discovery time: 6 low link: 6
+vertex: 15 discovery time: 7 low link: 7
+Changing vertex: 15 discovery time: 7 low link: 4
+Changing first visit vertex: 16 discovery time: 6 low link: 4
+Changing vertex: 16 discovery time: 6 low link: 4
+Changing first visit vertex: 8 discovery time: 5 low link: 4
+Changing vertex: 8 discovery time: 5 low link: 4
+Changing first visit vertex: 7 discovery time: 4 low link: 4
+Changing vertex: 7 discovery time: 4 low link: 4
+15 16 8 7
+Changing first visit vertex: 6 discovery time: 3 low link: 3
+Changing vertex: 6 discovery time: 3 low link: 3
+6
+Changing first visit vertex: 1 discovery time: 1 low link: 1
+Changing vertex: 1 discovery time: 1 low link: 1
+2 1
+Changing first visit vertex: 0 discovery time: 0 low link: 0
+Changing vertex: 0 discovery time: 0 low link: 0
+vertex: 5 discovery time: 8 low link: 8
+Changing vertex: 5 discovery time: 8 low link: 8
+vertex: 12 discovery time: 9 low link: 9
+vertex: 3 discovery time: 10 low link: 10
+Changing vertex: 3 discovery time: 10 low link: 0
+vertex: 4 discovery time: 11 low link: 11
+Changing vertex: 4 discovery time: 11 low link: 8
+Changing first visit vertex: 3 discovery time: 10 low link: 0
+Changing vertex: 3 discovery time: 10 low link: 0
+Changing first visit vertex: 12 discovery time: 9 low link: 0
+Changing vertex: 12 discovery time: 9 low link: 0
+vertex: 13 discovery time: 12 low link: 12
+vertex: 14 discovery time: 13 low link: 13
+vertex: 9 discovery time: 14 low link: 14
+vertex: 11 discovery time: 15 low link: 15
+Changing vertex: 11 discovery time: 15 low link: 13
+Changing first visit vertex: 9 discovery time: 14 low link: 13
+Changing vertex: 9 discovery time: 14 low link: 13
+Changing first visit vertex: 14 discovery time: 13 low link: 13
+Changing vertex: 14 discovery time: 13 low link: 13
+vertex: 10 discovery time: 16 low link: 16
+Changing vertex: 10 discovery time: 16 low link: 13
+Changing first visit vertex: 14 discovery time: 13 low link: 13
+Changing vertex: 14 discovery time: 13 low link: 13
+Changing vertex: 14 discovery time: 13 low link: 13
+10 11 9 14
+Changing first visit vertex: 13 discovery time: 12 low link: 12
+Changing vertex: 13 discovery time: 12 low link: 12
+13
+Changing first visit vertex: 12 discovery time: 9 low link: 0
+Changing vertex: 12 discovery time: 9 low link: 0
+Changing first visit vertex: 5 discovery time: 8 low link: 0
+Changing vertex: 5 discovery time: 8 low link: 0
+Changing first visit vertex: 0 discovery time: 0 low link: 0
+Changing vertex: 0 discovery time: 0 low link: 0
+4 3 12 5 0
+----
+2
+3
+4
+8
+9
+10
+11
+16
