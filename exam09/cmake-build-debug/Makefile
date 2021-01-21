@@ -124,32 +124,32 @@ exam09\fast:
 	$(MAKE) -f CMakeFiles\exam09.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\exam09.dir\build
 .PHONY : exam09\fast
 
-main.obj: main.cpp.obj
+kruskal.obj: kruskal.cpp.obj
 
-.PHONY : main.obj
+.PHONY : kruskal.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\exam09.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\exam09.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+kruskal.cpp.obj:
+	$(MAKE) -f CMakeFiles\exam09.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\exam09.dir\kruskal.cpp.obj
+.PHONY : kruskal.cpp.obj
 
-main.i: main.cpp.i
+kruskal.i: kruskal.cpp.i
 
-.PHONY : main.i
+.PHONY : kruskal.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\exam09.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\exam09.dir\main.cpp.i
-.PHONY : main.cpp.i
+kruskal.cpp.i:
+	$(MAKE) -f CMakeFiles\exam09.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\exam09.dir\kruskal.cpp.i
+.PHONY : kruskal.cpp.i
 
-main.s: main.cpp.s
+kruskal.s: kruskal.cpp.s
 
-.PHONY : main.s
+.PHONY : kruskal.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\exam09.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\exam09.dir\main.cpp.s
-.PHONY : main.cpp.s
+kruskal.cpp.s:
+	$(MAKE) -f CMakeFiles\exam09.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\exam09.dir\kruskal.cpp.s
+.PHONY : kruskal.cpp.s
 
 prim.obj: prim.cpp.obj
 
@@ -187,9 +187,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... exam09
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... kruskal.obj
+	@echo ... kruskal.i
+	@echo ... kruskal.s
 	@echo ... prim.obj
 	@echo ... prim.i
 	@echo ... prim.s

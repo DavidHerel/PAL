@@ -89,7 +89,7 @@ void Graph::print() {
              << T[i].first << "\n";
     }
     std::cout<< "MST weight: " << MST_weight << "\n";
-}
+}/*
 int main() {
     Graph g(6);
     //weight, starting V, ending V
@@ -112,4 +112,4 @@ int main() {
     g.kruskal();
     g.print();
     return 0;
-}
+}*/

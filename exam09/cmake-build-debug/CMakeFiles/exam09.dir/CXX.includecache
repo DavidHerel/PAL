@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/Skola/PAL/PAL/exam09/prim.cpp
-iostream
+D:/Skola/PAL/PAL/exam09/kruskal.cpp
+algorithm
 -
-cstring
+iostream
 -
 vector
 -
-queue
--
-climits
+set
 -
 

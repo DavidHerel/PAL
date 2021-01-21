@@ -58,23 +58,23 @@ include CMakeFiles\exam09.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\exam09.dir\flags.make
 
-CMakeFiles\exam09.dir\main.cpp.obj: CMakeFiles\exam09.dir\flags.make
-CMakeFiles\exam09.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\exam09\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exam09.dir/main.cpp.obj"
+CMakeFiles\exam09.dir\kruskal.cpp.obj: CMakeFiles\exam09.dir\flags.make
+CMakeFiles\exam09.dir\kruskal.cpp.obj: ..\kruskal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\exam09\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exam09.dir/kruskal.cpp.obj"
 	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\exam09.dir\main.cpp.obj /FdCMakeFiles\exam09.dir\ /FS -c D:\Skola\PAL\PAL\exam09\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\exam09.dir\kruskal.cpp.obj /FdCMakeFiles\exam09.dir\ /FS -c D:\Skola\PAL\PAL\exam09\kruskal.cpp
 <<
 
-CMakeFiles\exam09.dir\main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exam09.dir/main.cpp.i"
-	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\exam09.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\exam09\main.cpp
+CMakeFiles\exam09.dir\kruskal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exam09.dir/kruskal.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\exam09.dir\kruskal.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\exam09\kruskal.cpp
 <<
 
-CMakeFiles\exam09.dir\main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exam09.dir/main.cpp.s"
+CMakeFiles\exam09.dir\kruskal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exam09.dir/kruskal.cpp.s"
 	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\exam09.dir\main.cpp.s /c D:\Skola\PAL\PAL\exam09\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\exam09.dir\kruskal.cpp.s /c D:\Skola\PAL\PAL\exam09\kruskal.cpp
 <<
 
 CMakeFiles\exam09.dir\prim.cpp.obj: CMakeFiles\exam09.dir\flags.make
@@ -98,13 +98,13 @@ CMakeFiles\exam09.dir\prim.cpp.s: cmake_force
 
 # Object files for target exam09
 exam09_OBJECTS = \
-"CMakeFiles\exam09.dir\main.cpp.obj" \
+"CMakeFiles\exam09.dir\kruskal.cpp.obj" \
 "CMakeFiles\exam09.dir\prim.cpp.obj"
 
 # External object files for target exam09
 exam09_EXTERNAL_OBJECTS =
 
-exam09.exe: CMakeFiles\exam09.dir\main.cpp.obj
+exam09.exe: CMakeFiles\exam09.dir\kruskal.cpp.obj
 exam09.exe: CMakeFiles\exam09.dir\prim.cpp.obj
 exam09.exe: CMakeFiles\exam09.dir\build.make
 exam09.exe: CMakeFiles\exam09.dir\objects1.rsp

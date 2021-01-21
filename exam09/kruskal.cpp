@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <set>
 
 class Graph {
 private:
@@ -13,17 +14,23 @@ private:
     int MST_vertices;
     int graph_V;
     int graph_M; //to know when to stop
+
 public:
     Graph(int V, int M);
     void add_edge(int u, int v, int w);
     int find_set(int i);
     void union_set(int u, int v);
-    void kruskal();
+    int kruskal();
     void print();
+    void change_set();
+    bool *subset;
 };
 Graph::Graph(int V, int M) {
     parent = new int[V];
     rank = new int[V];
+    subset = new bool[V];
+    memset(subset, false, sizeof(bool)*V);
+
     graph_V = V;
     graph_M = M;
     MST_weight=0;
@@ -73,49 +80,106 @@ void Graph::union_set(int u, int v) {
     }
 
 }
-void Graph::kruskal() {
+
+void Graph::change_set() {
+    MST_weight=0;
+    MST_vertices = 0;
+    //i 0 1 2 3 4 5
+    //parent[i] 0 1 2 3 4 5
+    for (int i = 0; i < graph_V; i++) {
+        parent[i] = i;
+        rank[i]=0;
+    }
+    T.clear();
+}
+int Graph::kruskal() {
+    int edges_cnt=0;
     int i, uRep, vRep;
     sort(G.begin(), G.end());  // increasing weight
     for (i = 0; i < G.size(); i++) {
-        //already done
-        if (graph_V-graph_M == MST_vertices){
-            break;
+        //stop
+        if (edges_cnt == graph_V - graph_M-1) {
+            return MST_weight;
         }
-        std::cout<<"Found " << G[i].second.first << ":"<<G[i].second.second << " weight: "<<G[i].first << "\n";
-        uRep = find_set(G[i].second.first);;
-        vRep = find_set(G[i].second.second);
-        std::cout << "Parents " << uRep<<":"<< vRep << "\n";
+        //std::cout<< subset[G[i].second.first] << subset[G[i].second.second] << "\n";
+        if(subset[G[i].second.first] && subset[G[i].second.second]) {
 
-        if (uRep != vRep) {
-            MST_weight+=G[i].first; //add weight to total MST
-            MST_vertices++; //increase number of MST_vertices in MST
-            T.push_back(G[i]);  // add to tree
-            union_set(uRep, vRep);
+            //std::cout<<"Found " << G[i].second.first << ":"<<G[i].second.second << " weight: "<<G[i].first << "\n";
+            uRep = find_set(G[i].second.first);;
+            vRep = find_set(G[i].second.second);
+            //std::cout << "Parents " << uRep<<":"<< vRep << "\n";
 
-            std::cout<<"To MST " << uRep << ":"<<vRep << " weight: "<<G[i].first << "\n";
+            if (uRep != vRep) {
+                MST_weight += G[i].first; //add weight to total MST
+
+                T.push_back(G[i]);  // add to tree
+                union_set(uRep, vRep);
+                edges_cnt++;
+                //std::cout<<"To MST " << uRep << ":"<<vRep << " weight: "<<G[i].first << "\n";
+            }
         }
     }
+    return INT_MAX;
 }
 void Graph::print() {
-    /*
+    std::cout<<"Vertexes in subset:\n";
+    for (int j = 0; j < graph_V; ++j) {
+        if(subset[j]){
+            std::cout<< j << " ";
+        }
+    }
+    std::cout<<"\n";
     std::cout << "Edge :"
               << " Weight" << "\n";
     for (int i = 0; i < T.size(); i++) {
         std::cout << T[i].second.first << " - " << T[i].second.second << " : "
                   << T[i].first << "\n";
     }
-    */
+
     std::cout<< "MST weight: " << MST_weight << "\n";
 }
 
-/*
+void all_combinations(Graph &G, int *arr, int end_cond, int V){
+    int count = pow(2,V);
+    int min = INT_MAX;
+    int counter = 0;
+    for (int i = 0; i < count; ++i) {
+        for (int j = 0; j < V; ++j) {
+            if ((i & (1 << j)) != 0){
+               G.subset[arr[j]]=true;
+               //std::cout<< arr[j];
+               counter++;
+            }
+
+        }
+        //std::cout<<"\n";
+        if(counter==end_cond){
+
+            //std::cout << "starting"<<"\n";
+            //std::cout<<"Starting\n";
+            int temp_min = G.kruskal();
+            if (temp_min<min){
+                min = temp_min;
+                //std::cout<< "Min:" << min <<"\n";
+                //G.print();
+            }
+
+            G.change_set();
+        }
+        counter=0;
+        memset(G.subset, false, sizeof(bool)*V);
+    }
+    std::cout<<min;
+}
+
 int main() {
     int V,M;
     scanf("%d %d", &V, &M);
     Graph g(V, M);
-
+    int *arr = new int[V];
     int weight;
     for (int i = 0; i < V; i++) {
+        arr[i] = i;
         for (int j = 0; j < V; j++) {
             std::cin >> weight;
             //starting node, ending node, weight
@@ -125,7 +189,6 @@ int main() {
             }
         }
     }
-    g.kruskal();
-    g.print();
+    all_combinations(g, arr, V-M, V);
     return 0;
-}*/
+}

@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Skola/PAL/PAL/exam09/main.cpp">
+		<Unit filename="D:/Skola/PAL/PAL/exam09/kruskal.cpp">
 			<Option target="exam09"/>
 		</Unit>
 		<Unit filename="D:/Skola/PAL/PAL/exam09/prim.cpp">

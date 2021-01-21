@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Skola/PAL/PAL/exam09/main.cpp" "D:/Skola/PAL/PAL/exam09/cmake-build-debug/CMakeFiles/exam09.dir/main.cpp.obj"
+  "D:/Skola/PAL/PAL/exam09/kruskal.cpp" "D:/Skola/PAL/PAL/exam09/cmake-build-debug/CMakeFiles/exam09.dir/kruskal.cpp.obj"
   "D:/Skola/PAL/PAL/exam09/prim.cpp" "D:/Skola/PAL/PAL/exam09/cmake-build-debug/CMakeFiles/exam09.dir/prim.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

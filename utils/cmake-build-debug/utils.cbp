@@ -83,7 +83,10 @@
 		<Unit filename="D:/Skola/PAL/PAL/utils/kruskal.cpp">
 			<Option target="utils"/>
 		</Unit>
-		<Unit filename="D:/Skola/PAL/PAL/utils/main.cpp">
+		<Unit filename="D:/Skola/PAL/PAL/utils/prim.cpp">
+			<Option target="utils"/>
+		</Unit>
+		<Unit filename="D:/Skola/PAL/PAL/utils/subset_combination.cpp">
 			<Option target="utils"/>
 		</Unit>
 		<Unit filename="D:/Skola/PAL/PAL/utils/CMakeLists.txt">

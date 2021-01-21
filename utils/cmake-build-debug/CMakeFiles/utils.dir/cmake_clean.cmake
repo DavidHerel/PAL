@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/utils.dir/main.cpp.obj"
+  "CMakeFiles/utils.dir/prim.cpp.obj"
   "CMakeFiles/utils.dir/kruskal.cpp.obj"
+  "CMakeFiles/utils.dir/subset_combination.cpp.obj"
   "utils.pdb"
   "utils.exe"
   "utils.exe.manifest"

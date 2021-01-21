@@ -3,4 +3,4 @@ project(exam09)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(exam09 main.cpp prim.cpp)
+add_executable(exam09 kruskal.cpp prim.cpp)

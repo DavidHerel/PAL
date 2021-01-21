@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-D:/Skola/PAL/PAL/utils/kruskal.cpp
-algorithm
--
+D:/Skola/PAL/PAL/utils/subset_combination.cpp
 iostream
--
-vector
 -
 

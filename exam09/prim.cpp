@@ -72,7 +72,7 @@ int prim_algorithm(std::vector<std::vector<std::pair<int, int>>> &adjency_list, 
     //std::cout << "MST: " << spanning_tree_cost << "\n";
 }
 
-
+/*
 int main() {
     int V,M;
     scanf("%d %d", &V, &M);
@@ -97,4 +97,4 @@ int main() {
     }
     std::cout<<min;
     return 0;
-}
+}*/

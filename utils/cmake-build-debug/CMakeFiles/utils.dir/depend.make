@@ -3,5 +3,7 @@
 
 CMakeFiles\utils.dir\kruskal.cpp.obj: ..\kruskal.cpp
 
-CMakeFiles\utils.dir\main.cpp.obj: ..\main.cpp
+CMakeFiles\utils.dir\prim.cpp.obj: ..\prim.cpp
+
+CMakeFiles\utils.dir\subset_combination.cpp.obj: ..\subset_combination.cpp
 

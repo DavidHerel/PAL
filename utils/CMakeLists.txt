@@ -3,4 +3,4 @@ project(utils)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(utils main.cpp kruskal.cpp)
+add_executable(utils prim.cpp kruskal.cpp subset_combination.cpp)

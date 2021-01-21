@@ -151,32 +151,59 @@ kruskal.cpp.s:
 	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\kruskal.cpp.s
 .PHONY : kruskal.cpp.s
 
-main.obj: main.cpp.obj
+prim.obj: prim.cpp.obj
 
-.PHONY : main.obj
+.PHONY : prim.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+prim.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\prim.cpp.obj
+.PHONY : prim.cpp.obj
 
-main.i: main.cpp.i
+prim.i: prim.cpp.i
 
-.PHONY : main.i
+.PHONY : prim.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\main.cpp.i
-.PHONY : main.cpp.i
+prim.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\prim.cpp.i
+.PHONY : prim.cpp.i
 
-main.s: main.cpp.s
+prim.s: prim.cpp.s
 
-.PHONY : main.s
+.PHONY : prim.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\main.cpp.s
-.PHONY : main.cpp.s
+prim.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\prim.cpp.s
+.PHONY : prim.cpp.s
+
+subset_combination.obj: subset_combination.cpp.obj
+
+.PHONY : subset_combination.obj
+
+# target to build an object file
+subset_combination.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\subset_combination.cpp.obj
+.PHONY : subset_combination.cpp.obj
+
+subset_combination.i: subset_combination.cpp.i
+
+.PHONY : subset_combination.i
+
+# target to preprocess a source file
+subset_combination.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\subset_combination.cpp.i
+.PHONY : subset_combination.cpp.i
+
+subset_combination.s: subset_combination.cpp.s
+
+.PHONY : subset_combination.s
+
+# target to generate assembly for a file
+subset_combination.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\subset_combination.cpp.s
+.PHONY : subset_combination.cpp.s
 
 # Help Target
 help:
@@ -190,9 +217,12 @@ help:
 	@echo ... kruskal.obj
 	@echo ... kruskal.i
 	@echo ... kruskal.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... prim.obj
+	@echo ... prim.i
+	@echo ... prim.s
+	@echo ... subset_combination.obj
+	@echo ... subset_combination.i
+	@echo ... subset_combination.s
 .PHONY : help
 
 
