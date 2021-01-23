@@ -115,11 +115,91 @@ CMakeFiles\utils.dir\subset_combination.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\subset_combination.cpp.s /c D:\Skola\PAL\PAL\utils\subset_combination.cpp
 <<
 
+CMakeFiles\utils.dir\kosaraju.cpp.obj: CMakeFiles\utils.dir\flags.make
+CMakeFiles\utils.dir\kosaraju.cpp.obj: ..\kosaraju.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/utils.dir/kosaraju.cpp.obj"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\utils.dir\kosaraju.cpp.obj /FdCMakeFiles\utils.dir\ /FS -c D:\Skola\PAL\PAL\utils\kosaraju.cpp
+<<
+
+CMakeFiles\utils.dir\kosaraju.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/kosaraju.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\utils.dir\kosaraju.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\utils\kosaraju.cpp
+<<
+
+CMakeFiles\utils.dir\kosaraju.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/kosaraju.cpp.s"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\kosaraju.cpp.s /c D:\Skola\PAL\PAL\utils\kosaraju.cpp
+<<
+
+CMakeFiles\utils.dir\tarjan.cpp.obj: CMakeFiles\utils.dir\flags.make
+CMakeFiles\utils.dir\tarjan.cpp.obj: ..\tarjan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/utils.dir/tarjan.cpp.obj"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\utils.dir\tarjan.cpp.obj /FdCMakeFiles\utils.dir\ /FS -c D:\Skola\PAL\PAL\utils\tarjan.cpp
+<<
+
+CMakeFiles\utils.dir\tarjan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/tarjan.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\utils.dir\tarjan.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\utils\tarjan.cpp
+<<
+
+CMakeFiles\utils.dir\tarjan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/tarjan.cpp.s"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\tarjan.cpp.s /c D:\Skola\PAL\PAL\utils\tarjan.cpp
+<<
+
+CMakeFiles\utils.dir\DFS.cpp.obj: CMakeFiles\utils.dir\flags.make
+CMakeFiles\utils.dir\DFS.cpp.obj: ..\DFS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/utils.dir/DFS.cpp.obj"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\utils.dir\DFS.cpp.obj /FdCMakeFiles\utils.dir\ /FS -c D:\Skola\PAL\PAL\utils\DFS.cpp
+<<
+
+CMakeFiles\utils.dir\DFS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/DFS.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\utils.dir\DFS.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\utils\DFS.cpp
+<<
+
+CMakeFiles\utils.dir\DFS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/DFS.cpp.s"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\DFS.cpp.s /c D:\Skola\PAL\PAL\utils\DFS.cpp
+<<
+
+CMakeFiles\utils.dir\lev_dist.cpp.obj: CMakeFiles\utils.dir\flags.make
+CMakeFiles\utils.dir\lev_dist.cpp.obj: ..\lev_dist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/utils.dir/lev_dist.cpp.obj"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\utils.dir\lev_dist.cpp.obj /FdCMakeFiles\utils.dir\ /FS -c D:\Skola\PAL\PAL\utils\lev_dist.cpp
+<<
+
+CMakeFiles\utils.dir\lev_dist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/lev_dist.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\utils.dir\lev_dist.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\utils\lev_dist.cpp
+<<
+
+CMakeFiles\utils.dir\lev_dist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/lev_dist.cpp.s"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\lev_dist.cpp.s /c D:\Skola\PAL\PAL\utils\lev_dist.cpp
+<<
+
 # Object files for target utils
 utils_OBJECTS = \
 "CMakeFiles\utils.dir\prim.cpp.obj" \
 "CMakeFiles\utils.dir\kruskal.cpp.obj" \
-"CMakeFiles\utils.dir\subset_combination.cpp.obj"
+"CMakeFiles\utils.dir\subset_combination.cpp.obj" \
+"CMakeFiles\utils.dir\kosaraju.cpp.obj" \
+"CMakeFiles\utils.dir\tarjan.cpp.obj" \
+"CMakeFiles\utils.dir\DFS.cpp.obj" \
+"CMakeFiles\utils.dir\lev_dist.cpp.obj"
 
 # External object files for target utils
 utils_EXTERNAL_OBJECTS =
@@ -127,9 +207,13 @@ utils_EXTERNAL_OBJECTS =
 utils.exe: CMakeFiles\utils.dir\prim.cpp.obj
 utils.exe: CMakeFiles\utils.dir\kruskal.cpp.obj
 utils.exe: CMakeFiles\utils.dir\subset_combination.cpp.obj
+utils.exe: CMakeFiles\utils.dir\kosaraju.cpp.obj
+utils.exe: CMakeFiles\utils.dir\tarjan.cpp.obj
+utils.exe: CMakeFiles\utils.dir\DFS.cpp.obj
+utils.exe: CMakeFiles\utils.dir\lev_dist.cpp.obj
 utils.exe: CMakeFiles\utils.dir\build.make
 utils.exe: CMakeFiles\utils.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable utils.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable utils.exe"
 	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\utils.dir --manifests  -- D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\utils.dir\objects1.rsp @<<
  /out:utils.exe /implib:utils.lib /pdb:D:\Skola\PAL\PAL\utils\cmake-build-debug\utils.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

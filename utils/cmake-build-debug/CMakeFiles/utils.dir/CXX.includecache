@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-D:/Skola/PAL/PAL/utils/subset_combination.cpp
+D:/Skola/PAL/PAL/utils/kosaraju.cpp
 iostream
+-
+list
+-
+stack
+-
+vector
+-
+
+D:/Skola/PAL/PAL/utils/tarjan.cpp
+iostream
+-
+list
+-
+stack
+-
+vector
 -
 

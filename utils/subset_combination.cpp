@@ -58,6 +58,19 @@ void all_subsets(int arr[], int n)
     }
 }
 
+//Postupne se rozvetvuju - to same jde udelat i s cislama, akorat by tam byly vector napriklad misto stringu
+void repeating_subsets(std::string alphabet, int k, int curr_len, std::string subset){
+    if (k == curr_len) {
+        std::cout<< subset<<"\n";
+        return;
+    }
+    for (char i : alphabet) {
+        std::string temp_subset = subset + i;
+        repeating_subsets(alphabet, k, curr_len+1, temp_subset);
+
+    }
+}
+/*
 //this can be done on chars too
 int main() {
     int N = 5;
@@ -69,7 +82,8 @@ int main() {
 
     std::cout<< "All subsets:\n";
     all_subsets(set, N);
-
+    std::string set_ch = "abcd";
+    repeating_subsets(set_ch, 3, 0, "");
     return 0;
 }
-
+*/

@@ -124,6 +124,60 @@ utils\fast:
 	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\build
 .PHONY : utils\fast
 
+DFS.obj: DFS.cpp.obj
+
+.PHONY : DFS.obj
+
+# target to build an object file
+DFS.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\DFS.cpp.obj
+.PHONY : DFS.cpp.obj
+
+DFS.i: DFS.cpp.i
+
+.PHONY : DFS.i
+
+# target to preprocess a source file
+DFS.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\DFS.cpp.i
+.PHONY : DFS.cpp.i
+
+DFS.s: DFS.cpp.s
+
+.PHONY : DFS.s
+
+# target to generate assembly for a file
+DFS.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\DFS.cpp.s
+.PHONY : DFS.cpp.s
+
+kosaraju.obj: kosaraju.cpp.obj
+
+.PHONY : kosaraju.obj
+
+# target to build an object file
+kosaraju.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\kosaraju.cpp.obj
+.PHONY : kosaraju.cpp.obj
+
+kosaraju.i: kosaraju.cpp.i
+
+.PHONY : kosaraju.i
+
+# target to preprocess a source file
+kosaraju.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\kosaraju.cpp.i
+.PHONY : kosaraju.cpp.i
+
+kosaraju.s: kosaraju.cpp.s
+
+.PHONY : kosaraju.s
+
+# target to generate assembly for a file
+kosaraju.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\kosaraju.cpp.s
+.PHONY : kosaraju.cpp.s
+
 kruskal.obj: kruskal.cpp.obj
 
 .PHONY : kruskal.obj
@@ -150,6 +204,33 @@ kruskal.s: kruskal.cpp.s
 kruskal.cpp.s:
 	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\kruskal.cpp.s
 .PHONY : kruskal.cpp.s
+
+lev_dist.obj: lev_dist.cpp.obj
+
+.PHONY : lev_dist.obj
+
+# target to build an object file
+lev_dist.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\lev_dist.cpp.obj
+.PHONY : lev_dist.cpp.obj
+
+lev_dist.i: lev_dist.cpp.i
+
+.PHONY : lev_dist.i
+
+# target to preprocess a source file
+lev_dist.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\lev_dist.cpp.i
+.PHONY : lev_dist.cpp.i
+
+lev_dist.s: lev_dist.cpp.s
+
+.PHONY : lev_dist.s
+
+# target to generate assembly for a file
+lev_dist.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\lev_dist.cpp.s
+.PHONY : lev_dist.cpp.s
 
 prim.obj: prim.cpp.obj
 
@@ -205,6 +286,33 @@ subset_combination.cpp.s:
 	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\subset_combination.cpp.s
 .PHONY : subset_combination.cpp.s
 
+tarjan.obj: tarjan.cpp.obj
+
+.PHONY : tarjan.obj
+
+# target to build an object file
+tarjan.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\tarjan.cpp.obj
+.PHONY : tarjan.cpp.obj
+
+tarjan.i: tarjan.cpp.i
+
+.PHONY : tarjan.i
+
+# target to preprocess a source file
+tarjan.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\tarjan.cpp.i
+.PHONY : tarjan.cpp.i
+
+tarjan.s: tarjan.cpp.s
+
+.PHONY : tarjan.s
+
+# target to generate assembly for a file
+tarjan.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\tarjan.cpp.s
+.PHONY : tarjan.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -214,15 +322,27 @@ help:
 	@echo ... utils
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... DFS.obj
+	@echo ... DFS.i
+	@echo ... DFS.s
+	@echo ... kosaraju.obj
+	@echo ... kosaraju.i
+	@echo ... kosaraju.s
 	@echo ... kruskal.obj
 	@echo ... kruskal.i
 	@echo ... kruskal.s
+	@echo ... lev_dist.obj
+	@echo ... lev_dist.i
+	@echo ... lev_dist.s
 	@echo ... prim.obj
 	@echo ... prim.i
 	@echo ... prim.s
 	@echo ... subset_combination.obj
 	@echo ... subset_combination.i
 	@echo ... subset_combination.s
+	@echo ... tarjan.obj
+	@echo ... tarjan.i
+	@echo ... tarjan.s
 .PHONY : help
 
 

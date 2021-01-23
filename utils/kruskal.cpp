@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
-
+/*
 class Graph {
 private:
     std::vector<std::pair<int, std::pair<int, int>> > G;  // graph
@@ -89,7 +89,8 @@ void Graph::print() {
              << T[i].first << "\n";
     }
     std::cout<< "MST weight: " << MST_weight << "\n";
-}/*
+}
+
 int main() {
     Graph g(6);
     //weight, starting V, ending V
