@@ -151,6 +151,33 @@ DFS.cpp.s:
 	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\DFS.cpp.s
 .PHONY : DFS.cpp.s
 
+automata.obj: automata.cpp.obj
+
+.PHONY : automata.obj
+
+# target to build an object file
+automata.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\automata.cpp.obj
+.PHONY : automata.cpp.obj
+
+automata.i: automata.cpp.i
+
+.PHONY : automata.i
+
+# target to preprocess a source file
+automata.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\automata.cpp.i
+.PHONY : automata.cpp.i
+
+automata.s: automata.cpp.s
+
+.PHONY : automata.s
+
+# target to generate assembly for a file
+automata.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\automata.cpp.s
+.PHONY : automata.cpp.s
+
 kosaraju.obj: kosaraju.cpp.obj
 
 .PHONY : kosaraju.obj
@@ -259,6 +286,60 @@ prim.cpp.s:
 	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\prim.cpp.s
 .PHONY : prim.cpp.s
 
+ranking.obj: ranking.cpp.obj
+
+.PHONY : ranking.obj
+
+# target to build an object file
+ranking.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\ranking.cpp.obj
+.PHONY : ranking.cpp.obj
+
+ranking.i: ranking.cpp.i
+
+.PHONY : ranking.i
+
+# target to preprocess a source file
+ranking.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\ranking.cpp.i
+.PHONY : ranking.cpp.i
+
+ranking.s: ranking.cpp.s
+
+.PHONY : ranking.s
+
+# target to generate assembly for a file
+ranking.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\ranking.cpp.s
+.PHONY : ranking.cpp.s
+
+sieve_erast.obj: sieve_erast.cpp.obj
+
+.PHONY : sieve_erast.obj
+
+# target to build an object file
+sieve_erast.cpp.obj:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\sieve_erast.cpp.obj
+.PHONY : sieve_erast.cpp.obj
+
+sieve_erast.i: sieve_erast.cpp.i
+
+.PHONY : sieve_erast.i
+
+# target to preprocess a source file
+sieve_erast.cpp.i:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\sieve_erast.cpp.i
+.PHONY : sieve_erast.cpp.i
+
+sieve_erast.s: sieve_erast.cpp.s
+
+.PHONY : sieve_erast.s
+
+# target to generate assembly for a file
+sieve_erast.cpp.s:
+	$(MAKE) -f CMakeFiles\utils.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\utils.dir\sieve_erast.cpp.s
+.PHONY : sieve_erast.cpp.s
+
 subset_combination.obj: subset_combination.cpp.obj
 
 .PHONY : subset_combination.obj
@@ -325,6 +406,9 @@ help:
 	@echo ... DFS.obj
 	@echo ... DFS.i
 	@echo ... DFS.s
+	@echo ... automata.obj
+	@echo ... automata.i
+	@echo ... automata.s
 	@echo ... kosaraju.obj
 	@echo ... kosaraju.i
 	@echo ... kosaraju.s
@@ -337,6 +421,12 @@ help:
 	@echo ... prim.obj
 	@echo ... prim.i
 	@echo ... prim.s
+	@echo ... ranking.obj
+	@echo ... ranking.i
+	@echo ... ranking.s
+	@echo ... sieve_erast.obj
+	@echo ... sieve_erast.i
+	@echo ... sieve_erast.s
 	@echo ... subset_combination.obj
 	@echo ... subset_combination.i
 	@echo ... subset_combination.s

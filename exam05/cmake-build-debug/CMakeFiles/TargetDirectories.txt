@@ -1,0 +1,3 @@
+D:/Skola/PAL/PAL/exam05/cmake-build-debug/CMakeFiles/exam05.dir
+D:/Skola/PAL/PAL/exam05/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Skola/PAL/PAL/exam05/cmake-build-debug/CMakeFiles/rebuild_cache.dir

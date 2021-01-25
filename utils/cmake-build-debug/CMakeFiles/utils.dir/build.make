@@ -191,6 +191,63 @@ CMakeFiles\utils.dir\lev_dist.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\lev_dist.cpp.s /c D:\Skola\PAL\PAL\utils\lev_dist.cpp
 <<
 
+CMakeFiles\utils.dir\automata.cpp.obj: CMakeFiles\utils.dir\flags.make
+CMakeFiles\utils.dir\automata.cpp.obj: ..\automata.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/utils.dir/automata.cpp.obj"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\utils.dir\automata.cpp.obj /FdCMakeFiles\utils.dir\ /FS -c D:\Skola\PAL\PAL\utils\automata.cpp
+<<
+
+CMakeFiles\utils.dir\automata.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/automata.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\utils.dir\automata.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\utils\automata.cpp
+<<
+
+CMakeFiles\utils.dir\automata.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/automata.cpp.s"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\automata.cpp.s /c D:\Skola\PAL\PAL\utils\automata.cpp
+<<
+
+CMakeFiles\utils.dir\ranking.cpp.obj: CMakeFiles\utils.dir\flags.make
+CMakeFiles\utils.dir\ranking.cpp.obj: ..\ranking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/utils.dir/ranking.cpp.obj"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\utils.dir\ranking.cpp.obj /FdCMakeFiles\utils.dir\ /FS -c D:\Skola\PAL\PAL\utils\ranking.cpp
+<<
+
+CMakeFiles\utils.dir\ranking.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/ranking.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\utils.dir\ranking.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\utils\ranking.cpp
+<<
+
+CMakeFiles\utils.dir\ranking.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/ranking.cpp.s"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\ranking.cpp.s /c D:\Skola\PAL\PAL\utils\ranking.cpp
+<<
+
+CMakeFiles\utils.dir\sieve_erast.cpp.obj: CMakeFiles\utils.dir\flags.make
+CMakeFiles\utils.dir\sieve_erast.cpp.obj: ..\sieve_erast.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/utils.dir/sieve_erast.cpp.obj"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\utils.dir\sieve_erast.cpp.obj /FdCMakeFiles\utils.dir\ /FS -c D:\Skola\PAL\PAL\utils\sieve_erast.cpp
+<<
+
+CMakeFiles\utils.dir\sieve_erast.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/sieve_erast.cpp.i"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe > CMakeFiles\utils.dir\sieve_erast.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Skola\PAL\PAL\utils\sieve_erast.cpp
+<<
+
+CMakeFiles\utils.dir\sieve_erast.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/sieve_erast.cpp.s"
+	D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\utils.dir\sieve_erast.cpp.s /c D:\Skola\PAL\PAL\utils\sieve_erast.cpp
+<<
+
 # Object files for target utils
 utils_OBJECTS = \
 "CMakeFiles\utils.dir\prim.cpp.obj" \
@@ -199,7 +256,10 @@ utils_OBJECTS = \
 "CMakeFiles\utils.dir\kosaraju.cpp.obj" \
 "CMakeFiles\utils.dir\tarjan.cpp.obj" \
 "CMakeFiles\utils.dir\DFS.cpp.obj" \
-"CMakeFiles\utils.dir\lev_dist.cpp.obj"
+"CMakeFiles\utils.dir\lev_dist.cpp.obj" \
+"CMakeFiles\utils.dir\automata.cpp.obj" \
+"CMakeFiles\utils.dir\ranking.cpp.obj" \
+"CMakeFiles\utils.dir\sieve_erast.cpp.obj"
 
 # External object files for target utils
 utils_EXTERNAL_OBJECTS =
@@ -211,9 +271,12 @@ utils.exe: CMakeFiles\utils.dir\kosaraju.cpp.obj
 utils.exe: CMakeFiles\utils.dir\tarjan.cpp.obj
 utils.exe: CMakeFiles\utils.dir\DFS.cpp.obj
 utils.exe: CMakeFiles\utils.dir\lev_dist.cpp.obj
+utils.exe: CMakeFiles\utils.dir\automata.cpp.obj
+utils.exe: CMakeFiles\utils.dir\ranking.cpp.obj
+utils.exe: CMakeFiles\utils.dir\sieve_erast.cpp.obj
 utils.exe: CMakeFiles\utils.dir\build.make
 utils.exe: CMakeFiles\utils.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable utils.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Skola\PAL\PAL\utils\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable utils.exe"
 	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\utils.dir --manifests  -- D:\VisualStudio\VC\Tools\MSVC\14.26.28801\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\utils.dir\objects1.rsp @<<
  /out:utils.exe /implib:utils.lib /pdb:D:\Skola\PAL\PAL\utils\cmake-build-debug\utils.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

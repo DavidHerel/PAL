@@ -83,6 +83,9 @@
 		<Unit filename="D:/Skola/PAL/PAL/utils/DFS.cpp">
 			<Option target="utils"/>
 		</Unit>
+		<Unit filename="D:/Skola/PAL/PAL/utils/automata.cpp">
+			<Option target="utils"/>
+		</Unit>
 		<Unit filename="D:/Skola/PAL/PAL/utils/kosaraju.cpp">
 			<Option target="utils"/>
 		</Unit>
@@ -93,6 +96,12 @@
 			<Option target="utils"/>
 		</Unit>
 		<Unit filename="D:/Skola/PAL/PAL/utils/prim.cpp">
+			<Option target="utils"/>
+		</Unit>
+		<Unit filename="D:/Skola/PAL/PAL/utils/ranking.cpp">
+			<Option target="utils"/>
+		</Unit>
+		<Unit filename="D:/Skola/PAL/PAL/utils/sieve_erast.cpp">
 			<Option target="utils"/>
 		</Unit>
 		<Unit filename="D:/Skola/PAL/PAL/utils/subset_combination.cpp">
